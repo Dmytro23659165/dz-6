@@ -1,0 +1,129 @@
+body {
+  /*display: flex;
+  justify-content: space around;*/
+  background-color: grey;
+}
+/*header*/
+header{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(95, 95, 95);
+}
+
+.box{
+  display: flex;
+  gap: 400px;
+}
+
+.boxer{
+  display: flex;
+}
+
+.boxer1{
+  display: flex;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.boxer2{
+  display: flex;
+  gap: 70px;
+}
+
+
+.text1{
+  color: blue;
+  font-size: 25px;
+}
+
+.text2{
+  color: white;
+  font-size: 25px;
+}
+
+
+.a1{
+  color: white;
+  text-decoration: none;
+  margin-top: 27px;
+  font-size: 15px;
+
+  transform: rotate(-3deg);
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1ms;
+}
+
+
+.a1:hover{
+  color: blue;
+  transform: rotate(3deg);
+}
+
+
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.list__item{
+  position: relative;
+  overflow: hidden;
+}
+
+.a1::before{
+  content: '';
+  position: absolute;
+  transform: translate(-80px, 17px);
+  background-color: blue;
+  width: 80px;
+  height: 2px;
+  transition: transform 1s linear;
+}
+
+.a1:hover::before{
+  transform: translate(0, 17px);
+}
+
+
+
+
+
+
+.info,.nomer{
+  color: white;
+  margin-top: 27px;
+
+  transform: scale(0.9);
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1ms;
+}
+
+
+.info:hover,.nomer:hover{
+  color: blue;
+  transform: scale(1.1);
+}
+
+/*header-end*/
