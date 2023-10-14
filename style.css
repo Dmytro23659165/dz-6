@@ -7,9 +7,8 @@ body {
 header{
   display: flex;
   justify-content: center;
-  background-color: rgb(95, 95, 95);
 }
-
+    /*
 .scene {
   perspective: 600px;
   height: 300px;
@@ -28,7 +27,41 @@ header{
 .scene:hover .box {
   transform: scale(1) rotateZ(360deg);
 }
-   
-   
+   */
 
+.box{
+  overflow: hidden;
+}
+
+.boxer{
+  width: 365px; 
+  height: 300px;
+} 
+
+.text-link{ 
+    background-color: rgb(88, 88, 88);
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.boxer:hover .text-link{
+  transform: translateY(-149px);
+}
+
+.text{
+    color: white;
+    font-size: 16px;
+}
+ 
+.text1{
+    color: white;
+    opacity: 60%;
+    font-size: 12px;
+}
+
+.text,.text1{
+    padding: 20px;
+}
 /*header-end*/
