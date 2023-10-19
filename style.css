@@ -7,61 +7,40 @@ body {
 header{
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
-    /*
-.scene {
-  perspective: 600px;
-  height: 300px;
-  width: 300px;
-  overflow: hidden;
-  outline: 1px solid black;
-}
-   
-.box {
-  height: 100%;
-  background-color: teal;
-  transform: scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-   
-.scene:hover .box {
-  transform: scale(1) rotateZ(360deg);
-}
-   */
 
 .box{
-  overflow: hidden;
+
 }
 
 .boxer{
-  width: 365px; 
-  height: 300px;
-} 
 
-.text-link{ 
-    background-color: rgb(88, 88, 88);
-    transform: translateY(10px);
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: linear;
 }
 
-.boxer:hover .text-link{
-  transform: translateY(-149px);
+.text-link{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(61, 61, 61);
+  animation: a 10s linear 0s infinite alternate;
 }
 
-.text{
-    color: white;
-    font-size: 16px;
-}
- 
-.text1{
-    color: white;
-    opacity: 60%;
-    font-size: 12px;
-}
-
-.text,.text1{
-    padding: 20px;
+@keyframes a {
+  10%{
+    transform: translateY(-100px);
+    background-color: rgb(255, 0, 0);
+  }
+  35%{
+    transform: translateX(100px);
+    background-color: rgb(17, 0, 255);
+  }
+  60%{
+    transform: translateY(100px);
+    background-color: rgb(0, 255, 13);
+  }
+  100%{
+    transform: translateX(-100px);
+    background-color: rgb(238, 255, 0);
+  }
 }
 /*header-end*/
