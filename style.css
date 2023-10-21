@@ -22,25 +22,39 @@ header{
   width: 100px;
   height: 100px;
   background-color: rgb(61, 61, 61);
-  animation: a 10s linear 0s infinite alternate;
+  position: absolute;
+  animation: a 10s linear 0s infinite;
 }
 
 @keyframes a {
-  10%{
-    transform: translateY(-100px);
-    background-color: rgb(255, 0, 0);
+  0%{
+    /* transform: translateY(-100px); */
+    top: 0;
+    left: 50%;
+    background-color: purple;
   }
-  35%{
-    transform: translateX(100px);
+  25%{
+    /* transform: translateX(100px); */
+    top: 0;
+    left: 500px;
     background-color: rgb(17, 0, 255);
   }
-  60%{
-    transform: translateY(100px);
+  50%{
+    /* transform: translateY(100px); */
+    top: 500px;
+    left: 500px;
     background-color: rgb(0, 255, 13);
   }
-  100%{
-    transform: translateX(-100px);
+  75%{
+    /* transform: translateX(-100px); */
+    top: 500px;
+    left: 50%;
     background-color: rgb(238, 255, 0);
+  }
+  100%{
+    top: 0;
+    left: 50%;
+    background-color: purple;
   }
 }
 /*header-end*/
