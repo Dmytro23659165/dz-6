@@ -1,157 +1,189 @@
-$main-texts-color: #626262;
-$secondary-text-color: #B4AD9E;
-$accent-color: #03A9F4;
-$navigations-links-color: #7D7D7D;
+$body-color: white;
+$header-texte-color: rgba(33, 150, 243, 1);
+$section-background-color: #2F303A;
+$section-color: rgb(231, 231, 231);
+body{
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 0;
+}
 
 .container{
     width: 1200px;
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .header{
-       .navigation{
-        &__list{
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-            margin-right: 40px;
-        }
-
-        &__item{
-            list-style: none;
-        }
-
-        &__link{
-            text-decoration: none;
-            color: #7D7D7D;
-            font-family: Playfair Display;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal; 
-        }
-
-        &__link:hover{
-            color: #03A9F4;;
-        }
-       } 
-}
-.main{
-    .section{
+    padding: 30px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
         display: flex;
         justify-content: center;
-        gap: 60px;
-        &__content{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        &__image{
-            width: 420px;
-            height: 280px;
-        }
-        &__category{
-            color: #B4AD9E;
-            font-family: Ubuntu;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-        }
-        &__title{
-            color: #626262;
-            font-family: Playfair Display;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-        &__description{
-            color: #626262;
-            font-family: Playfair Display;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            width: 420px;
-        }
+        align-items: center;
+        gap: 93px;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    &__link:hover{
+        color: rgb(32, 100, 255);
+    }   
+    &__linko:hover{
+        color: rgb(32, 100, 255);
+    }
+    &__contact{
+        display: flex;
+        align-items: center;
+        gap: 50px;
     }
 }
-.section{
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    &__content{
+
+.section-1{
+    background-color: #2F303A;
+    padding: 200px;
+    margin-top: 10px;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__text{
+        color: #FFF;
+        width: 800px;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px; /* 136.364% */
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+    }
+    &__btn{
+        padding: 15px 30px;
+        border-radius: 7px;
+        background-color: rgb(32, 100, 255);
+        border-color: grey;
+    }
+}
+
+.section-2{
+    padding: 94px;
+    margin-left: 35px;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__title{
+        color: #212121;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    &__text{
+        color: #757575;
+        font-family: Roboto;
+        width: 270px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.42px;
+    }
+}
+.section-3{
+    padding: 118px;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__texte{
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+    }
+    &__img{
+        width: 370px;
+        height: 297px;
+    }
+}
+
+.section-4{
+    padding: 188px;
+    &__inner{
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    &__image{
-        width: 420px;
-        height: 280px;
-    }
-    &__category{
-        color: #B4AD9E;
-        font-family: Ubuntu;
-        font-size: 14px;
+    &__texter{
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 700;
         line-height: normal;
+        letter-spacing: 1.08px;
     }
-    &__title{
-        color: #626262;
-        font-family: Playfair Display;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    &__description{
-        color: #626262;
-        font-family: Playfair Display;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 420px;
-    }
-}
-.section{
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    &__content{
+    &__photo{
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        gap: 30px;
     }
-    &__image{
-        width: 420px;
-        height: 280px;
+    &__team-member{
+        overflow: hidden;
+        background-color: white;
     }
-    &__category{
-        color: #B4AD9E;
-        font-family: Ubuntu;
+    &__team-img{
+        width: 270px;
+        height: 260px;
+    }
+    &__team-name{
+        margin: 15px;
+    }
+    &__team-role{
+        margin: 15px;
+    }
+}
+
+.section-5{
+    background-color: #2F303A;
+    padding: 60px;
+    &__img{
+        margin-top: 30px;
+    }
+    &__text{
+        color: #FFF;
+        font-family: Roboto;
         font-size: 14px;
         font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    }
-    &__title{
-        color: #626262;
-        font-family: Playfair Display;
-        font-size: 30px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
-    }
-    &__description{
-        color: #626262;
-        font-family: Playfair Display;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 420px;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.42px;
     }
 }
